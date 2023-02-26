@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+    box-sizing: border-box;
+}
+*,
+*:before,*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    line-height: 1.7;
+}
+img,picture, svg {
+    display: block;
+    max-width: 100%;
+}
+input,button,textarea,select {
+    font: inherit;
+}
+h1, h2, h3 {
+    line-height: 1;
+}
+:root {
+--Pale-blue: hsl(226, 100%, 89%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+--fw-slight: 500;
+--fw-heavy: 700;
+--fw-heavier: 900;
+}
+body {
+    font-size: 16px;
+    font-family: 'Red Hat Display'; 
+    background-image:  url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Pale-blue);
+    font-weight: 500;
+    display: grid;
+    place-content: center;
+    margin: 1rem;
+    color: var(--Desaturated-blue);
+}
+.product {
+    --content-padding: 2rem;
+    --content-spacing: 1rem;
+    background-color: var(--Very-pale-blue);
+    display: grid;
+    border-radius: 1rem;
+    overflow: hidden;
+    max-width: 300px;
+}
+
+.product__content {
+   display: grid;
+   align-items: center;
+   align-content: center;
+   padding: var(--content-padding);
+   gap: var(--content-spacing);
+}
+.product__header {
+   text-align: center;
+   font-weight: var(--fw-heavy);
+   color: black;
+}
+.flex-group {
+    display: flex;
+    gap: .85rem;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f1efef;
+    height: 5rem;
+    padding: 1rem;
+    border-radius: .8rem;
+}
+.plan {
+    font-size: 14px;
+    font-weight: var(--fw-heavy);
+    color: black;
+}
+.price {
+    font-size: 14px;
+}
+.change {
+    float: right;
+    color: var(--Bright-blue);
+    text-decoration: underline;
+    font-size: 12px;
+}
+.change:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+.button {
+    cursor: pointer;
+    padding: .55em 1.5em;
+    background-color: var(--Bright-blue);
+    color: white;
+    font-weight: var(--fw-heavy);
+    border: none;
+    border-radius: .5rem;
+    font-size: 14px;
+    box-shadow:5px 15px 10px #e3e3e3;
+}
+.button:hover {
+    opacity: .8;
+}
+.product__cancel {
+    font-weight: var(--fw-heavier);
+    font-size: 13px;
+    text-align: center;
+}
+.product__cancel:hover {
+    color: black;
+    cursor: pointer;
+}
